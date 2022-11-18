@@ -1,0 +1,147 @@
+body {
+  background-color: black;
+  color: lime;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Michroma", sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+#gameTitle {
+  font-size: 3rem;
+}
+
+#players {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 70%;
+  text-shadow: 2px 1px 0px rgba(0, 255, 0, 1);
+  text-shadow: 2px 2px 16px rgba(0, 255, 0, 1);
+}
+.playerContainer {
+  font-size: 1.5rem;
+}
+#gameboard {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  width: 800px;
+  height: 800px;
+}
+
+.tile {
+  font-family: "Rubik Glitch", cursive;
+  font-size: 5rem;
+}
+#tile1 {
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  grid-area: 1 / 1 / 1 / 1;
+  transition: 500ms;
+}
+#tile1:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+#tile2 {
+  border-bottom: 1px solid darkgreen;
+  border-right: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+  grid-area: 1 / 2 / 1 /2;
+}
+#tile2:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+#tile3 {
+  gird-area: 1 / 3 / 1 / 3;
+  border-bottom: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+}
+#tile3:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile4 {
+  border-bottom: 1px solid darkgreen;
+  border-right: 1px solid darkgreen;
+  border-top: 1px solid darkgreen;
+
+  gird-area: 2 / 1 / 2 / 1;
+}
+#tile4:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile5 {
+  border-bottom: 1px solid darkgreen;
+  border-right: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+  border-top: 1px solid darkgreen;
+  gird-area: 2 / 2 / 2 / 2;
+}
+#tile5:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile6 {
+  border-bottom: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+  border-top: 1px solid darkgreen;
+
+  gird-area: 2 / 3 / 2 / 3;
+}
+#tile6:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile7 {
+  border-right: 1px solid darkgreen;
+  border-top: 1px solid darkgreen;
+
+  gird-area: 3 / 1 / 3 / 1;
+}
+#tile7:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile8 {
+  border-right: 1px solid darkgreen;
+  border-top: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+
+  gird-area: 3 / 2 / 3 / 2;
+}
+#tile8:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+#tile9 {
+  border-top: 1px solid darkgreen;
+  border-left: 1px solid darkgreen;
+
+  gird-area: 3 / 3 / 3 / 3;
+}
+#tile9:hover {
+  box-shadow: 1px 1px 0px rgb(0, 255, 0), 0 0 0.2em lime, 0 0 0.1em lime;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
